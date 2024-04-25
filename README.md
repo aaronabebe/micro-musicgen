@@ -99,7 +99,7 @@ Everything is the same as in the original repo and standard musicgen training ex
 ## Training 
 
 ```sh
-dora run ...
+dora run solver=musicgen/musicgen_base_32khz model/lm/model_scale=micro conditioner=none dataset.batch_size=3 dset=audio/jungle dataset.valid.num_samples=1 generate.every=10000 evaluate.every=10000 optim.optimizer=adamw optim.lr=1e-4 optim.adam.weight_decay=0.01 checkpoint.save_every=5
 ```
 
 explain param choices
