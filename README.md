@@ -87,10 +87,15 @@ and combined with the under-training still resulted in enough artifacts and weir
 
 ### Speed
 
-I benchmarked comparing vs. `musicgen-small` via `audiocraft` and measured cold-boot start time. 
+I benchmarked comparing vs. `musicgen-small` via `audiocraft` and measured cold-boot inference time with a batch size of `10` and duration of `10 seconds`. 
+Test ran on my `GTX 3070` and an `Intel i5 13600K`.
+
+<p align="center">
+  <img src="./assets/speed_comparison.jpg" width="500" alt="Model speed comparison">
+</p>
+
 See [bench.py](./scripts/bench.py).
 
-comparison plot
 
 ### Size 
 
