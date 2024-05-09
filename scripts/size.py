@@ -15,7 +15,7 @@ def count_musicgen_parameters(name: str) -> int:
 
 
 def main():
-    params_micro = count_musicgen_parameters('pharoAIsanders420/micro-musicgen-jungle') / 1e6
+    params_micro = count_musicgen_parameters('pharoAIsanders420/micro-musicgen-acid') / 1e6
     params_small = count_musicgen_parameters('facebook/musicgen-small') / 1e6
 
     model_names = ['micro-musicgen', 'musicgen-small']
@@ -25,7 +25,7 @@ def main():
     plt.bar(model_names, params_counts, color=['green', 'blue'])
     plt.ylabel('Number of Parameters in Millions (Encodec + LM)')
     plt.title('Comparison of Model Parameters')
-    plt.show()
+    plt.savefig("size.png")
 
 
 if __name__=="__main__":

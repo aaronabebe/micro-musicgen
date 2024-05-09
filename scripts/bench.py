@@ -18,7 +18,7 @@ def bench_model(name: str) -> float:
 
 
 def main():
-    time_micro = bench_model('pharoAIsanders420/micro-musicgen-jungle')
+    time_micro = bench_model('pharoAIsanders420/micro-musicgen-acid')
     time_small = bench_model('facebook/musicgen-small')
 
     model_names = ['micro-musicgen', 'musicgen-small']
@@ -28,7 +28,7 @@ def main():
     plt.bar(model_names, params_counts, color=['green', 'blue'])
     plt.ylabel('Inference speed batch size 10 (seconds)')
     plt.title('Comparison of cold inference speed')
-    plt.show()
+    plt.savefig("bench.png")
 
 
 if __name__=="__main__":

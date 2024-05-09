@@ -42,6 +42,7 @@
 ## Models 
 
 - [micro-musicgen-jungle](https://huggingface.co/pharoAIsanders420/micro-musicgen-jungle)
+- [micro-musicgen-acid](https://huggingface.co/pharoAIsanders420/micro-musicgen-acid)
 - ...more coming soon
 
 If you find these model interesting, please consider:
